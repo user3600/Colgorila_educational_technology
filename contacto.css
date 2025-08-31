@@ -354,3 +354,26 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+  .titulo-seccion {
+    font-size: 1.4rem;
+    padding: 12px 40px;
+  }
+
+  .seccion-fondo-imagen,
+  .seccion-equipo {
+    background-attachment: scroll; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .titulo-seccion {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .tarjeta-formulario {
+    padding: 15px;
+  }
+}
