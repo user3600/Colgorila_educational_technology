@@ -363,3 +363,17 @@
   font-size: 1.1rem;
   color: #3e2723;
 }
+@media (max-width: 768px) {
+  .slide h5 {
+    font-size: 1.2rem;
+  }
+
+  .slide p {
+    font-size: 1rem;
+  }
+
+  .imagen-dato-curioso {
+    max-width: 90%;
+    max-height: 180px;
+  }
+}
