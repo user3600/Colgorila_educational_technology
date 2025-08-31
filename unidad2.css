@@ -290,10 +290,10 @@
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 400px; 
+  min-height: 400px;  
   margin: 0 auto;
   overflow: hidden;
-  height: auto;
+  padding-bottom: 30px; 
 }
 
 /* Caja del slide agrandada */
