@@ -283,7 +283,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.seccion-fondo-imagen {
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -291,11 +291,7 @@
   background-image: url("img/incon.jpg"); 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Fondo animado */
@@ -361,15 +357,4 @@
     margin: 4px 0;
   }
 }
-@media (max-width: 768px) {
-  .contacto {
-    padding: 40px 0 !important; 
-  }
 
-  .contacto img {
-    max-height: 200px;
-    object-fit: contain;
-    margin: 0 auto;
-    display: block;
-  }
-}
