@@ -300,7 +300,7 @@
 .slide {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
