@@ -190,6 +190,11 @@
   background-color: #fefefe;
   border-top: 6px solid #FFEA00;
   border-bottom: 6px solid #FFEA00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  padding: 0; 
 }
 
 .seccion-contacto h2 {
