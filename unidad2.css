@@ -283,14 +283,7 @@
 }
 
 /* Carrusel */
-.carrusel-curioso {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  min-height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-}
+
 
 
 .carrusel-curioso {
