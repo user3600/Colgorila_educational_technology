@@ -251,7 +251,26 @@ body{  margin: 0;
 }
 
 
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .titulo-seccion {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-align: center;
+    display: block;  
+  }
+}
 
+@media (max-width: 480px) {
+  .titulo-seccion {
+    padding: 10px 15px;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    word-break: break-word; 
+  }
+}
 
 
 
