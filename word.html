@@ -1,0 +1,330 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONOCE WORD</title>
+    <link rel="stylesheet" href="el_computador.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<!-- ENCABEZADO -->
+<nav class="navbar navbar-expand-lg mi-navbar-personalizada">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="Logo" width="40" height="40">
+    </a>
+
+    <!-- BOTÓN RESPONSIVE -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- ELEMENTOS DE NAVEGACIÓN -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav w-100 justify-content-evenly">
+        
+        <!-- INICIO -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">
+            <img src="img/home.png" alt="INICIO" width="20" height="20" style="margin-right: 8px;">
+            Inicio
+          </a>
+        </li>
+
+        <!-- TEMAS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Temas
+          </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="unidad1.html">EL COMPUTADOR</a></li>
+    <li><a class="dropdown-item" href="unidad2.html">PAINT</a></li>
+    <li><a class="dropdown-item" href="unidad3.html">WORDPAD</a></li>
+    <li><a class="dropdown-item" href="unidad4.html">MICROSOFT WORD</a></li>
+    <li><a class="dropdown-item" href="unidad5.html">EL INTERNET</a></li>
+  </ul>
+        </li>
+
+        <!-- DESCARGAS -->
+        <li class="nav-item">
+          <a class="nav-link" href="descargas.html">Descargas</a>
+        </li>
+
+        <!-- CONTACTO -->
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ENCABEZADO -->
+ <body>
+
+  <!-- Botón flotante -->
+  <button id="btnSubir">↑</button>
+
+  <!-- Script para el scroll -->
+  <script>
+    const btn = document.getElementById("btnSubir");
+
+    // Mostrar el botón
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    // Acción al hacer clic
+    btn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+
+<!-- IMAGEN PRINCIPAL -->
+<section class="seccion-fondo-imagen text-center py-5" data-aos="fade-down">
+  <div class="container">
+    <img src="img/wordportada.png" alt="Configurar Página en WordPad" class="img-fluid imagen-descarga-principal" data-aos="zoom-in" data-aos-delay="100">
+  </div>
+</section>
+
+<!-- PÁGINA MICROSOFT WORD -->
+<section class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="titulo-seccion text-center mb-4">📝 Microsoft Word</h2>
+    <p class="lead text-center">
+      Microsoft Word es un procesador de texto muy utilizado en el mundo, 
+      que nació en 1981 y pertenece al paquete Office. Permite escribir, editar 
+      y dar formato a documentos, insertar imágenes, tablas y gráficos, 
+      además de corregir errores automáticamente.
+    </p>
+  </div>
+</section>
+
+<!-- CARACTERÍSTICAS -->
+<section class="py-5 " data-aos="fade-up">
+  <div class="container">
+    <h3 class="titulo-seccion text-center mb-4">📌 Características principales</h3>
+    <ul class="lista-temas">
+      <li>Permite escribir y editar textos de manera sencilla.</li>
+      <li>Incluye herramientas como negrita, cursiva y subrayado.</li>
+      <li>Configura el tamaño y orientación de la hoja.</li>
+      <li>Inserta imágenes, gráficos y tablas.</li>
+      <li>Corrector ortográfico integrado.</li>
+      <li>Encabezados, pies de página y numeración automática.</li>
+      <li>Opciones de guardar en distintos formatos (DOCX, PDF, RTF, etc.).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADES -->
+<section class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h3 class="titulo-seccion text-center mb-4">⚙️ Funcionalidades de Word</h3>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h5>✍️ Formato de texto</h5>
+        <p>Permite aplicar <b>negrita</b>, <i>cursiva</i> y <u>subrayado</u>, así como cambiar el tamaño, 
+        color y estilo de las letras.</p>
+        <img src="img/formatotexto.png" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mb-4">
+        <h5>📐 Alineación del texto</h5>
+        <p>Se puede alinear el texto a la izquierda, centrarlo, alinearlo a la derecha o justificarlo 
+        para darle una mejor presentación.</p>
+        <img src="img/alineartexto.png" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mb-4">
+        <h5>🖼️ Imágenes y tablas</h5>
+        <p>Word permite insertar imágenes, gráficos y tablas para complementar los documentos.</p>
+        <img src="img/imagentabla.png" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mb-4">
+        <h5>🛠️ Otras herramientas</h5>
+        <p>Corrector ortográfico, control de cambios, notas al pie, encabezado y pie de página.</p>
+        <img src="img/encabe.png" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENCABEZADO Y PIE DE PÁGINA -->
+<section class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h3 class="titulo-seccion text-center mb-4">🔝 Encabezado y Pie de Página</h3>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <p class="texto-justificado">
+          Microsoft Word permite agregar <b>encabezados</b> y <b>pies de página</b> 
+          para que aparezcan en todas las páginas del documento.  
+          Allí se pueden incluir títulos, logotipos, fechas, o números de página 
+          que facilitan la organización y presentación profesional de los textos.
+        </p>
+      </div>
+      <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="120">
+        <img src="img/word--encabezados-y-pies-de-pagina--01.png" alt="Encabezado y Pie de Página en Word" class="img-fluid img-tema">
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+
+<!-- GUARDAR EN DIFERENTES FORMATOS -->
+<section class="py-5 " data-aos="fade-up">
+  <div class="container">
+    <h3 class="titulo-seccion text-center mb-4">💾 Guardar en Diferentes Formatos</h3>
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2" data-aos="fade-left">
+        <p class="texto-justificado">
+          Una de las ventajas de Word es que no solo guarda en su formato nativo (.docx),  
+          sino también en otros como <b>PDF</b>, <b>RTF</b> o incluso en versiones más antiguas (.doc).  
+          Esto facilita compartir documentos con personas que usan programas diferentes, 
+          asegurando compatibilidad y mejor accesibilidad.
+        </p>
+      </div>
+      <div class="col-md-6 text-center order-md-1" data-aos="zoom-in" data-aos-delay="120">
+        <img src="img/guardardiferen.png" alt="Guardar en diferentes formatos" class="img-fluid img-tema">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- JUEGOS -->
+<section id="juego_word" class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="titulo-seccion text-center mb-4">🧩 Juegos y Retos</h2>
+   
+    <div class="text-center">
+      <iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0" src="https://es.educaplay.com/juego/25078646-funcionalidades_de_microsoft_word.html"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="py-5 " data-aos="fade-up">
+  <div class="container">
+    <h3 class="titulo-seccion text-center mb-4">❓ Quiz sobre Microsoft Word</h3>
+    <form id="quiz-word">
+      <p><b>1. ¿En qué año nació Microsoft Word?</b></p>
+      <input type="radio" name="q1" value="a"> 1981<br>
+      <input type="radio" name="q1" value="b"> 1990<br>
+      <input type="radio" name="q1" value="c"> 2000<br><br>
+
+      <p><b>2. ¿Cuál de estas NO es una funcionalidad de Word?</b></p>
+      <input type="radio" name="q2" value="a"> Insertar imágenes<br>
+      <input type="radio" name="q2" value="b"> Hacer cálculos matemáticos complejos<br>
+      <input type="radio" name="q2" value="c"> Corrector ortográfico<br><br>
+
+      <p><b>3. ¿Qué significa el formato "negrita"?</b></p>
+      <input type="radio" name="q3" value="a"> Texto con color<br>
+      <input type="radio" name="q3" value="b"> Texto más grueso para resaltar<br>
+      <input type="radio" name="q3" value="c"> Texto subrayado<br><br>
+
+      <p><b>4. ¿Qué opción organiza el texto equitativamente entre los márgenes?</b></p>
+      <input type="radio" name="q4" value="a"> Centrar<br>
+      <input type="radio" name="q4" value="b"> Justificar<br>
+      <input type="radio" name="q4" value="c"> Alinear a la derecha<br><br>
+
+      <p><b>5. ¿Qué formato de archivo permite guardar Word?</b></p>
+      <input type="radio" name="q5" value="a"> JPG<br>
+      <input type="radio" name="q5" value="b"> MP3<br>
+      <input type="radio" name="q5" value="c"> PDF<br><br>
+
+      <button type="button" class="btn btn-descarga" onclick="revisarQuizWord()">📊 Revisar respuestas</button>
+    </form>
+    <p id="resultado-quiz-word" class="mt-4 fw-bold"></p>
+  </div>
+</section>
+
+<script>
+function revisarQuizWord() {
+  let correctas = 0;
+  if(document.querySelector('input[name="q1"]:checked')?.value === "a") correctas++;
+  if(document.querySelector('input[name="q2"]:checked')?.value === "b") correctas++;
+  if(document.querySelector('input[name="q3"]:checked')?.value === "b") correctas++;
+  if(document.querySelector('input[name="q4"]:checked')?.value === "b") correctas++;
+  if(document.querySelector('input[name="q5"]:checked')?.value === "c") correctas++;
+
+  document.getElementById("resultado-quiz-word").innerHTML =
+    "✅ Respuestas correctas: " + correctas + "/5";
+}
+</script>
+
+<!-- EJERCICIO FINAL -->
+<section class="py-5" data-aos="fade-up">
+  <div class="container text-center">
+    <h3 class="titulo-seccion mb-4">✍️ Ejercicio Final</h3>
+    <p>En Microsoft Word escribe un pequeño párrafo de 5 líneas sobre tu materia favorita.  
+    Aplica <b>negrita</b> a las palabras más importantes, <i>cursiva</i> a una frase y <u>súbrayalo</u> con color rojo.</p>
+  </div>
+</section>
+
+<!-- BOTÓN DESCARGA PDF -->
+<section class="pt-3 pb-5 text-center" data-aos="fade-up">
+  <a href="docs/UNIDAD 4-conoce_word.pdf" class="btn btn-descarga" download>
+    📥 Descargar Guía de sobre Word
+  </a>
+</section>
+
+<!-- AOS y Bootstrap -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+ </body>
+
+
+
+<!-- FOOTER -->
+<footer class="footer-personalizado py-4">
+  <div class="container text-center text-md-start">
+    <div class="row align-items-center">
+      
+      <!-- Logo y nombre -->
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <img src="img/logo.png" alt="Logo" width="110" height="110" class="mb-2">
+        <h5 class="mb-0 text-uppercase"></h5>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex justify-content-center gap-3 mb-0">
+          <li><a href="index.html" class="footer-link">Inicio</a></li>
+          <li><a href="unidad1.html" class="footer-link">Temas</a></li>
+          <li><a href="descargas.html" class="footer-link">Descargas</a></li>
+          <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales y derechos -->
+      <div class="col-md-4 text-center text-md-end">
+        <div class="social-icons mb-2">
+          <a href="https://www.facebook.com/profile.php?id=61580071965879" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/colgor1laeducation?igsh=MWxobjVwdWVhMnZ1cA==" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@ColgorilaEducationalTechnology" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@colgorilaeducation?_t=ZS-8zU593NFWgE&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <small>&copy; 2025. Todos los derechos reservados.</small>
+      </div>
+
+    </div>
+  </div>
+</footer>

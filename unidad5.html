@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIDAD 5</title>
+    <link rel="stylesheet" href="unidad5.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<!-- ENCABEZADO -->
+<nav class="navbar navbar-expand-lg mi-navbar-personalizada">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="Logo" width="40" height="40">
+    </a>
+
+    <!-- BOTÓN RESPONSIVE -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- ELEMENTOS DE NAVEGACIÓN -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav w-100 justify-content-evenly">
+        
+        <!-- INICIO -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">
+            <img src="img/home.png" alt="INICIO" width="20" height="20" style="margin-right: 8px;">
+            Inicio
+          </a>
+        </li>
+
+        <!-- TEMAS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Temas
+          </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="unidad1.html">EL COMPUTADOR</a></li>
+    <li><a class="dropdown-item" href="unidad2.html">PAINT</a></li>
+    <li><a class="dropdown-item" href="unidad3.html">WORDPAD</a></li>
+    <li><a class="dropdown-item" href="unidad4.html">MICROSOFT WORD</a></li>
+    <li><a class="dropdown-item" href="unidad5.html">EL INTERNET</a></li>
+  </ul>
+        </li>
+
+        <!-- DESCARGAS -->
+        <li class="nav-item">
+          <a class="nav-link" href="descargas.html">Descargas</a>
+        </li>
+
+        <!-- CONTACTO -->
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ENCABEZADO -->
+
+
+<body>
+ 
+  <!-- Botón flotante -->
+  <button id="btnSubir">↑</button>
+
+  <!-- Script para el scroll -->
+  <script>
+    const btn = document.getElementById("btnSubir");
+
+    // Mostrar el botón
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    // Acción al hacer clic
+    btn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+
+<!-- SECCIÓN UNIDAD -->
+<section class="unidad-1 py-5 text-center">
+  <div class="container">
+    <!-- Imagen destacada -->
+    <img src="img/unidad5.png" alt="Ilustración de computador" 
+         class="img-fluid mb-5 imagen-computador-grande" 
+         data-aos="zoom-in" data-aos-duration="1000">
+  </div>
+</section>
+
+<!-- SECCIÓN TEMAS -->
+<section class="seccion-temas py-5 text-center">
+  <div class="container">
+    <h3 class="titulo-temas mb-5" data-aos="fade-down" data-aos-duration="1000">
+      📚 TEMAS DE LA UNIDAD 📚
+    </h3>
+
+    <div class="row justify-content-center g-5">
+
+      <!-- TARJETA 1 -->
+      <div class="col-md-4 d-flex justify-content-center" data-aos="flip-right" data-aos-duration="1200">
+        <a href="riesgos.html" class="text-decoration-none">
+          <div class="tarjeta-completa">
+            <div class="cara frente">
+              <img src="img/riesgos.png" alt="Seguridad en Internet" class="imagen-completa">
+            </div>
+            <div class="cara reverso">
+              <h5 class="titulo-tarjeta">SEGURIDAD EN INTERNET</h5>
+              <p class="descripcion-tarjeta">Amenazas comunes y cómo protegerte.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- TARJETA 2 -->
+      <div class="col-md-4 d-flex justify-content-center" data-aos="flip-right" data-aos-duration="1200">
+        <a href="navegadores.html" class="text-decoration-none">
+          <div class="tarjeta-completa">
+            <div class="cara frente">
+              <img src="img/navegadores.png" alt="Navegadores Web" class="imagen-completa">
+            </div>
+            <div class="cara reverso">
+              <h5 class="titulo-tarjeta">NAVEGADORES WEB</h5>
+              <p class="descripcion-tarjeta">Explora los navegadores más usados y su función en Internet.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<br>
+
+
+<!-- SECCIÓN DATOS CURIOSOS -->
+<section class="seccion-datos-curiosos py-5 text-center">
+  <div class="container">
+    <h3 class="titulo-datos mb-4">🧠 DATOS CURIOSOS DE LA UNIDAD 🧠</h3>
+
+    <div class="carrusel-curioso">
+
+      <div class="slide"><h5>El navegador más usado del mundo es Google Chrome</h5>
+         <img src="img/chrome.jpg" alt="Computador antiguo" class="imagen-dato-curioso">
+        <p>Aunque hay varios navegadores como Firefox o Edge, Chrome es el favorito de la mayoría de usuarios.</p>
+      </div>
+
+      <div class="slide"><h5> El símbolo de la lupa en los navegadores es para buscar</h5>
+         <img src="img/lupa.jpg" alt="Computador antiguo" class="imagen-dato-curioso">
+        <p>¡Y no es solo un dibujo! Representa cómo investigamos cosas nuevas, igual que lo hacen los detectives.</p>
+      </div>
+      <div class="slide"><h5>Navegador no es lo mismo que buscador</h5>
+         <img src="img/navegadorvsbuscador.jpg" alt="Computador antiguo" class="imagen-dato-curioso">
+        <p>El navegador es como un auto que te lleva por internet (Chrome, Edge...), y el buscador (Google, Bing...) es el mapa que te ayuda a encontrar lo que buscas. ¡Ambos se necesitan!</p>
+      </div>
+
+            <div class="slide"><h5> No debes compartir tu información personal en internet</h5>
+         <img src="img/nocompartir.jpg" alt="Computador antiguo" class="imagen-dato-curioso">
+        <p>Es importante proteger tu nombre completo, dirección o fotos. ¡Solo compártelas con personas de confianza!</p>
+      </div>
+      <div class="slide"><h5>No todo lo que ves en internet es verdad</h5>
+         <img src="img/hacker.jpg" alt="Computador antiguo" class="imagen-dato-curioso">
+        <p>Existen noticias falsas y personas que no dicen quiénes son realmente. ¡Si algo te parece raro, cuéntaselo a un adulto!</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- Bootstrap + AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+<br>
+<!-- FOOTER -->
+<footer class="footer-personalizado py-4">
+  <div class="container text-center text-md-start">
+    <div class="row align-items-center">
+      
+      <!-- Logo y nombre -->
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
+        <img src="img/logo.png" alt="Logo" width="110" height="110" class="mb-2">
+        <h5 class="mb-0 text-uppercase"></h5>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <ul class="list-unstyled d-flex justify-content-center gap-3 mb-0">
+          <li><a href="index.html" class="footer-link">Inicio</a></li>
+          <li><a href="unidad1.html" class="footer-link">Temas</a></li>
+          <li><a href="descargas.html" class="footer-link">Descargas</a></li>
+          <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales y derechos -->
+      <div class="col-md-4 text-center text-md-end">
+        <div class="social-icons mb-2">
+          <a href="https://www.facebook.com/profile.php?id=61580071965879" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/colgor1laeducation?igsh=MWxobjVwdWVhMnZ1cA==" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@ColgorilaEducationalTechnology" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@colgorilaeducation?_t=ZS-8zU593NFWgE&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <small>&copy; 2025. Todos los derechos reservados.</small>
+      </div>
+
+    </div>
+  </div>
+</footer>

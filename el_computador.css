@@ -1,0 +1,422 @@
+#btnSubir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* oculto por defecto */
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 9999; 
+}
+
+#btnSubir:hover {
+  background-color: #008c9e;
+}
+
+/* Fondo de la barra de navegación */
+.mi-navbar-personalizada {
+  background-color: #00bcd4; 
+  padding: 10px 20px;
+  border-bottom: 4px solid #cddc39;
+}
+
+/* Ítems del navbar y del dropdown */
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1a237e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+/* Efecto hover con animación */
+.navbar-nav .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
+  background-color: #cddc39; 
+  color: #1a237e;
+  transform: scale(1.05);
+  box-shadow: 0 1px 4px rgba(205, 220, 57, 0.4);
+}
+
+/* Ítem activo */
+.navbar-nav .nav-link.active {
+  color: #ffcc00;
+}
+
+/* Fondo del dropdown */
+.dropdown-menu {
+  background-color: #00bcd4; 
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: visible;
+  z-index: 1000;
+}
+
+/* Estilo de ítems dentro del dropdown */
+.dropdown-item {
+  margin: 6px 0;
+  background-color: transparent;
+  color: #1a237e;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+   padding: 10px 15px;
+}
+
+/* Imagen de logo */
+.navbar-brand img {
+  width: 110px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item {
+  border-left: none !important;
+}
+
+.navbar-nav .nav-item::before {
+  content: none !important;
+}
+
+
+
+/* ======== SECCIÓN IMAGEN PRINCIPAL ======== */
+.imagen-descarga-principal {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.imagen-descarga-principal:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ======== TÍTULOS ======== */
+.titulo-seccion {
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4ade80, #00bcd4);
+  color: white;
+  padding: 14px 26px;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  animation: tituloGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes tituloGlow {
+  0% { box-shadow: 0 0 10px rgba(0, 188, 212, 0.6), 0 0 20px rgba(74, 222, 128, 0.4); }
+  100% { box-shadow: 0 0 20px rgba(0, 188, 212, 0.9), 0 0 30px rgba(74, 222, 128, 0.6); }
+}
+
+
+.texto-justificado {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* ======== TARJETAS  ======== */
+.tarjeta-tema, .tarjeta-descarga {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid rgba(0, 188, 212, 0.1);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+.tarjeta-tema:hover, .tarjeta-descarga:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+  border-color: rgba(0, 188, 212, 0.3);
+}
+
+
+.img-tema {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-tema:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ======== BOTÓN DE DESCARGA ======== */
+.btn-descarga {
+  background: linear-gradient(135deg, #00bcd4, #4ade80);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-descarga:hover {
+  background: linear-gradient(135deg, #4ade80, #00bcd4);
+  transform: scale(1.07);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+  color: white;
+}
+
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  padding-left: 5px;
+  border-left: 3px solid #4ade80;
+}
+
+/* ======== ANIMACIONES AOS PERSONALIZADAS ======== */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate.titulo-seccion {
+  animation: tituloGlow 2s ease-in-out infinite alternate;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .titulo-seccion {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+  .tarjeta-tema, .tarjeta-descarga {
+    padding: 15px;
+  }
+}
+
+body{
+  background: url(img/incon.jpg) !important;
+    margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-size: cover !important;
+  background-position: center !important;
+ 
+  background-attachment: fixed !important;
+}
+
+.bg-light {
+  background: url(img/incon.jpg) !important;
+    margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  background-size: cover !important;
+  background-position: center !important;
+ 
+  background-attachment: fixed !important;
+}
+
+
+
+[data-aos]:not(.aos-animate) {
+  opacity: 0;
+}
+[data-aos].aos-animate {
+  opacity: 1 !important;
+}
+
+
+.tarjeta-descarga img {
+   width: 100%;
+  height: 250px; 
+  object-fit: contain; 
+  border-radius: 15px; 
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+
+.tarjeta-descarga .btn-outline-primary {
+  color: #0d47a1 !important;
+  border-color: #0d47a1 !important;
+  background-color: #ffffff !important;
+}
+.tarjeta-descarga .btn-outline-primary:hover {
+  background-color: #0d47a1 !important;
+  color: #ffffff !important;
+}
+
+
+@media (min-width: 768px) {
+  .clasif-3 .col-item { width: 33.3333%; }
+}
+
+
+.img-tema {
+  width: 100%;
+  height: auto;
+
+}
+
+
+
+
+
+
+.img-clasificacion {
+  width: 100% !important;
+  height: 220px !important;   
+  object-fit: cover !important; 
+  border-radius: 12px !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.img-clasificacion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+section ul {
+  margin-bottom: 0 !important; 
+}
+
+
+.imagenes-redu {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  flex-wrap: wrap;
+}
+
+
+.img-mini {
+  max-width: 350px !important; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+  transition: transform 0.3s;
+}
+
+.img-mini:hover {
+  transform: scale(1.1); 
+}
+
+.seccion-compacta {
+  padding-top: 3rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.footer-personalizado {
+  background-color: #00bcd4; 
+  color: #ffffff;
+  border-top: 4px solid #cddc39; 
+  
+
+  font-family: 'Rubik', sans-serif;
+}
+
+.footer-link {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.footer-link:hover {
+  color: #1a237e;
+  background-color: #cddc39;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin: 0 5px;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1a237e;
+  transform: scale(1.2);
+}
+
+
+.juegos-educativos {
+  max-width: 900px;
+  margin: auto;
+}
+
+.juego-item {
+  margin-bottom: 20px;
+}
+
+.juego-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(90deg, #42e695, #3bb2b8);
+  color: #fff;
+  padding: 18px 22px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.juego-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+}
+
+.juego-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.juego-info h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.juego-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.juego-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
+
+
+
+
