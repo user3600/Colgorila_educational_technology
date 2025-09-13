@@ -19,6 +19,12 @@
   background-color: #008c9e;
 }
 
+@media (max-width: 576px) {
+  #btnSubir {
+    right: 10px;   
+    bottom: 15px; 
+  }
+
 /* Fondo de la barra de navegación */
 .mi-navbar-personalizada {
   background-color: #00bcd4; 
