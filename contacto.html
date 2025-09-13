@@ -72,6 +72,27 @@
 
 <body>
 
+ <!-- Botón flotante -->
+  <button id="btnSubir">↑</button>
+
+  <!-- Script para el scroll -->
+  <script>
+    const btn = document.getElementById("btnSubir");
+
+    // Mostrar el botón
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    // Acción al hacer clic
+    btn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>    
 
 <!-- IMAGEN DESTACADA -->
 <section class="seccion-fondo-imagen text-center py-5" data-aos="fade-up">
