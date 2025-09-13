@@ -433,10 +433,10 @@ section ul {
   border: none;
 }
 
-/* En celular aumentar el alto */
+/* En celular */
 @media (max-width: 768px) {
-  .iframe-container {
-    padding-bottom: 140%; 
+  iframe {
+    height: 900px; 
   }
 }
 
