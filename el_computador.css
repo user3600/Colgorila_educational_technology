@@ -435,10 +435,11 @@ section ul {
 
 /* En celular */
 @media (max-width: 768px) {
-  iframe {
-    height: 900px; 
+  .iframe-container {
+    padding-bottom: 130%; 
   }
 }
+
 
 
 
