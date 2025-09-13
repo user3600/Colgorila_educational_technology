@@ -37,12 +37,13 @@
           </a>
         </li>
 
-        <!-- TEMAS -->
+<!-- TEMAS -->
 <li class="nav-item dropdown" id="menu-temas">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class="nav-link dropdown-toggle" href="#" id="temasToggle"
+     role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Temas
   </a>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-menu" aria-labelledby="temasToggle">
     <li><a class="dropdown-item" href="unidad1.html">EL COMPUTADOR</a></li>
     <li><a class="dropdown-item" href="unidad2.html">PAINT</a></li>
     <li><a class="dropdown-item" href="unidad3.html">WORDPAD</a></li>
@@ -278,16 +279,16 @@
   document.getElementById("btnAprender").addEventListener("click", function(e) {
     e.preventDefault();
 
-  
     const menuTemas = document.getElementById("menu-temas");
+    const temasToggle = document.getElementById("temasToggle");
+
+    
     menuTemas.scrollIntoView({ behavior: "smooth", block: "center" });
 
-
+    
     setTimeout(() => {
-      const temasToggle = menuTemas.querySelector(".dropdown-toggle");
-      const dropdown = new bootstrap.Dropdown(temasToggle);
-      dropdown.show();
-    }, 200); 
+      temasToggle.click();
+    }, 500); 
   });
 </script>
 
