@@ -278,15 +278,16 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const btnAprender = document.getElementById("btnAprender");
+    const footerTemas = document.getElementById("footerTemas"); 
     const menuTemas = document.getElementById("menu-temas");
     const temasToggle = document.getElementById("temasToggle");
     const navbar = document.querySelector('.navbar-collapse');
     const toggler = document.querySelector('.navbar-toggler');
 
-    btnAprender.addEventListener("click", function (e) {
+    // función que hace scroll y abre dropdown
+    function abrirTemas(e) {
       e.preventDefault();
 
-      
       if (window.innerWidth < 992 && !navbar.classList.contains("show")) {
         toggler.click();
         setTimeout(() => {
@@ -294,25 +295,12 @@
           temasToggle.click();
         }, 400);
       } else {
-        // En PC solo scroll + abrir dropdown
         menuTemas.scrollIntoView({ behavior: "smooth", block: "center" });
         setTimeout(() => {
           temasToggle.click();
         }, 400);
       }
-    });
-
-    
-    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-    navLinks.forEach(function (link) {
-      link.addEventListener("click", function (event) {
-        if (navbar.classList.contains("show")) {
-          event.stopPropagation();
-        }
-      });
-    });
-  });
-</script>
+    }
 
 
 </body>
@@ -332,7 +320,7 @@
       <div class="col-md-4 mb-3 mb-md-0">
         <ul class="list-unstyled d-flex justify-content-center gap-3 mb-0">
           <li><a href="index.html" class="footer-link">Inicio</a></li>
-          <li><a href="unidad1.html" class="footer-link">Temas</a></li>
+          <li><a href="#" id="footerTemas" class="footer-link">Temas</a></li>
           <li><a href="descargas.html" class="footer-link">Descargas</a></li>
           <li><a href="contacto.html" class="footer-link">Contacto</a></li>
         </ul>
